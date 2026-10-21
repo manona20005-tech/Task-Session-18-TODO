@@ -1,0 +1,40 @@
+CREATE TABLE todos(
+id SERIAL PRIMARY KEY,
+title VARCHAR(225) NOT NULL,
+body TEXT NOT NULL,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+done BOOLEAN DEFAULT FALSE
+);
+
+INSERT INTO todos (title, body, done)
+VALUES
+('Study Python', 'Practice Python basics and loops', FALSE),
+('Learn JavaScript', 'Understand variables and functions', FALSE),
+('Practice HTML', 'Build a simple webpage', TRUE),
+('Practice CSS', 'Style a webpage using CSS', FALSE),
+('Learn Git', 'Practice Git commands', TRUE),
+('Create GitHub Repo', 'Upload a new project to GitHub', FALSE),
+('Study OOP', 'Review classes and objects', TRUE),
+('Practice Inheritance', 'Implement inheritance in Java', FALSE),
+('Study Polymorphism', 'Practice method overriding', FALSE),
+('Learn SQL', 'Practice SQL queries', TRUE),
+('Practice JOIN', 'Solve queries using INNER JOIN', FALSE),
+('Create Database', 'Design a database for a library', TRUE),
+('Study PostgreSQL', 'Review PostgreSQL data types', FALSE),
+('Learn Express Router', 'Organize API routes', TRUE),
+('Build REST API', 'Create endpoints for a small project', FALSE),
+('Test GET Endpoint', 'Retrieve all records from the API', TRUE),
+('Test POST Endpoint', 'Create a new record using the API', FALSE),
+('Test PATCH Endpoint', 'Update an existing record', FALSE),
+('Test DELETE Endpoint', 'Delete a record using the API', TRUE),
+('Learn Middleware', 'Practice Express middleware', FALSE),
+('Study Authentication', 'Understand login and authentication', FALSE),
+('Learn JWT', 'Practice JSON Web Tokens', TRUE),
+('Study Validation', 'Validate request bodies', FALSE),
+('Learn Drizzle ORM', 'Understand Drizzle schema definitions', TRUE),
+('Practice Migrations', 'Generate and apply database migrations', FALSE),
+('Build Todo App', 'Complete the todo application', TRUE),
+('Fix API Bugs', 'Debug errors in API endpoints', FALSE),
+('Write Unit Tests', 'Test important application functions', FALSE),
+('Review Data Structures', 'Practice stacks and queues', TRUE),
+('Study Algorithms', 'Solve searching and sorting problems', FALSE);
